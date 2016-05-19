@@ -1,0 +1,21 @@
+{
+  "name": "SeminoleSwimApp",
+  "version": "0.0.0",
+  "homepage": "https://github.com/juanm95/SeminoleSwimApp",
+  "authors": [
+    "Juan Marroquin <juanm95@stanford.edu>"
+  ],
+  "license": "This thing ain't free. You gotta pay",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0",
+    "iron-elements": "PolymerElements/iron-elements#~1.0.4",
+    "paper-elements": "PolymerElements/paper-elements#~1.0.5"
+  }
+}

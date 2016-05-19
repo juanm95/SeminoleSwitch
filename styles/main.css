@@ -1,0 +1,213 @@
+/*
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%;
+    margin: 0 auto -1em;
+    /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer,
+.push {
+    height: 2em;
+    /* .push must be the same height as .footer */
+}
+
+
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+*/
+
+body {
+    background: #d5f0f6;
+    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #005395;
+    font-size: 6vmin;
+}
+
+.middle-word {
+    color: #005395;
+}
+
+#resultCard {
+    font-size: 4vmin;
+}
+
+#result {
+    color: #7ED321;
+}
+
+.input-field {}
+
+.input-field > select {
+    padding: 0;
+    margin-top: -10px;
+    font-size: 13vmin;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    -webkit-appearance: none;
+}
+
+.nav-wrapper {
+    font-size: 1em;
+    font-weight: normal;
+    background-color: #7ED321;
+}
+
+#logo {
+    object-fit: contain;
+    max-height: 100%;
+    width: auto;
+    margin-left: 2vmin;
+}
+
+#minutes {
+    /*margin-right: -48px;*/
+}
+
+#seconds {
+    /*margin-right: -27px;*/
+}
+
+#milliseconds {
+    /*margin-right: -8px;*/
+}
+
+button.convert {
+    height: 10vmin;
+    background-color: #7ED321;
+    margin-top: 5vmin;
+}
+
+#convertTo {
+    padding-right: 8vmin;
+    padding-left: 8vmin;
+}
+
+#convertFrom {
+    padding-right: 4vmin;
+    padding-left: 4vmin;
+}
+
+#title {
+    margin-left: 2vmin;
+}
+
+#units {
+    height: 100%;
+}
+
+.time-label {
+    font-size: 6vmin;
+    position: absolute;
+    bottom: 0;
+}
+
+.onoffswitch {
+    margin-top: 1.4vmin;
+    position: relative;
+    width: 25vmin;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #999999;
+    border-radius: 20px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 6vmin;
+    padding: 0;
+    line-height: 1.2;
+    font-size: 5vmin;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "TO";
+    padding-left: 8px;
+    background-color: #005395;
+    color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "FROM";
+    padding-right: 8px;
+    background-color: #FFFFFF;
+    color: #005395;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block;
+    width: 5vmin;
+    height: 5vmin;
+    margin: .8vmin;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 18vmin;
+    border: 2px solid #999999;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+.fancyTextShadow {
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
